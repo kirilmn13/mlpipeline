@@ -1,0 +1,3 @@
+['remote "origin-s3"']
+    url = s3://dvc
+    endpointurl = https://dagshub.com/kirilmn13/mlpipeline.s3
