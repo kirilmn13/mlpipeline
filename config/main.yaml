@@ -42,4 +42,4 @@ model:
 #     ]
 #   target: "LeaveOrNot"
 
-mlflow_tracking_ui: "https://dagshub.com/kirilmn13/tsforecast.mlflow"
+mlflow_tracking_ui: "https://dagshub.com/kirilmn13/mlpipeline.mlflow"

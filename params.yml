@@ -10,7 +10,7 @@ enable_categorical: false
 eval_metric: null
 feature_types: null
 features: '[''City'', ''PaymentTier'', ''Age'', ''EverBenched'', ''ExperienceInCurrentDomain'']'
-gamma: 7.578588035809309
+gamma: 4.69267826260808
 grow_policy: null
 importance_type: null
 interaction_constraints: null
@@ -19,9 +19,9 @@ max_bin: null
 max_cat_threshold: null
 max_cat_to_onehot: null
 max_delta_step: null
-max_depth: 15
+max_depth: 11
 max_leaves: null
-min_child_weight: 6
+min_child_weight: 8
 missing: .nan
 model_class: XGBClassifier
 monotone_constraints: null
@@ -31,7 +31,7 @@ n_jobs: null
 num_parallel_tree: null
 objective: binary:logistic
 random_state: null
-reg_alpha: 124
+reg_alpha: 59
 reg_lambda: null
 sampling_method: null
 scale_pos_weight: null
