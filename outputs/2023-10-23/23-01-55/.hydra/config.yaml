@@ -1,0 +1,34 @@
+raw:
+  path: data/raw/Employee.csv
+processed:
+  dir: data/processed
+  X_train:
+    name: X_train.csv
+    path: ${processed.dir}/${processed.X_train.name}
+  X_test:
+    name: X_test.csv
+    path: ${processed.dir}/${processed.X_test.name}
+  y_train:
+    name: y_train.csv
+    path: ${processed.dir}/${processed.y_train.name}
+  y_test:
+    name: y_test.csv
+    path: ${processed.dir}/${processed.y_test.name}
+final:
+  dir: data/final
+  name: final.csv
+  path: ${final.dir}/${final.name}
+model:
+  dir: models
+  name: xgboost
+  path: ${model.dir}/${model.name}
+process:
+  features:
+  - City
+  - PaymentTier
+  - Age
+  - Gender
+  - EverBenched
+  - ExperienceInCurrentDomain
+  target: LeaveOrNot
+mlflow_tracking_ui: https://dagshub.com/kirilmn13/tsforecast.mlflow
