@@ -16,4 +16,4 @@ pydantic==1.9.1
 pytest==7.1.2
 bentoml==1.0.0a7
 dvc-s3
-fsspec==2023.6.0
+fsspec==2022.7.1
