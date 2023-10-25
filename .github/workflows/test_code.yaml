@@ -33,7 +33,6 @@ jobs:
 
       - name: Pull data
         run: |
-          dvc remote modify origin-s3 --local auth basic
           dvc remote modify origin-s3 --local user ${{ secrets.DAGSHUB_USERNAME }}
           dvc remote modify origin-s3 --local password ${{ secrets.DAGSHUB_TOKEN }}
           dvc pull -r origin-s3 train_model
