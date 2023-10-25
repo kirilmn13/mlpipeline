@@ -11,8 +11,8 @@ pytest-steps==1.8.0
 scikit_learn==1.1.1
 streamlit==1.9.0
 xgboost==1.6.1
-dvc==2.10.2
-dvc-s3==2.23.0
+dvc
+dvc-s3
 pydantic==1.9.1
 pytest==7.1.2
 bentoml==1.0.0a7
