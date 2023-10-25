@@ -33,10 +33,10 @@ jobs:
 
       - name: Pull data
         run: |
-          dvc remote modify origin --local auth basic
-          dvc remote modify origin --local user ${{ secrets.DAGSHUB_USERNAME }}
-          dvc remote modify origin --local password ${{ secrets.DAGSHUB_TOKEN }}
-          dvc pull -r origin train_model
+          dvc remote modify origin-s3 --local auth basic
+          dvc remote modify origin-s3 --local user ${{ secrets.DAGSHUB_USERNAME }}
+          dvc remote modify origin-s3 --local password ${{ secrets.DAGSHUB_TOKEN }}
+          dvc pull -r origin-s3 train_model
 
       - name: Test processed code and ML model
         run: pytest training/tests
